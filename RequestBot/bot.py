@@ -5,7 +5,7 @@ from pyromod import listen
 from pyrogram import Client as RawClient
 from pyrogram.storage import Storage
 
-from config import API_HASH, APP_ID, OWNER_ID, BOT_TOKEN
+from config import API_HASH, APP_ID, LOGGER, OWNER_ID, BOT_TOKEN
 
 class Client(RawClient):
     """ Custom Bot Class """
