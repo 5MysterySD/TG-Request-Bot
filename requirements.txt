@@ -1,2 +1,9 @@
-pyrogram
+# --- For-Bot-Working --------- #
+pyrogram==1.4.1
 TgCrypto
+Pyromod
+# --- For-Database ------------ #
+sqlalchemy~=1.3.23
+psycopg2-binary
+feedparser
+
