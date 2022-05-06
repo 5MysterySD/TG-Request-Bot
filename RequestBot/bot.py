@@ -7,12 +7,8 @@ from pyrogram.storage import Storage
 
 from config import API_HASH, APP_ID, OWNER_ID, BOT_TOKEN
 
-LOGGER = Config.LOGGER
-log = LOGGER.getLogger(__name__)
-
-
 class Client(RawClient):
-    """ Custom Bot Class by AbirHasan"""
+    """ Custom Bot Class """
 
     def __init__(self, session_name: Union[str, Storage] = "RequestBot"):
         super().__init__(
@@ -24,11 +20,12 @@ class Client(RawClient):
                 "root": "plugins"
             },
         )
+        self.LOGGER = LOGGER
 
     async def start(self):
         await super().start()
-        log.info("Bot Started!")
+        self.LOGGER(__name__).info("Bot Started!")
 
     async def stop(self, *args):
         await super().stop()
-        log.info("Bot Stopped!")
+        self.LOGGER(__name__).info("Bot Stopped!")
