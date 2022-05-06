@@ -13,7 +13,7 @@ class Client(RawClient):
     def __init__(self, session_name: Union[str, Storage] = "RequestBot"):
         super().__init__(
             session_name,
-            api_id=API_ID,
+            api_id=APP_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
             plugins={
