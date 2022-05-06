@@ -23,7 +23,6 @@ class Client(RawClient):
             plugins={
                 "root": "plugins"
             },
-            )
         )
 
     async def start(self):
