@@ -1,3 +1,3 @@
-from RequestBot.bot import Client 
+from RequestBot.bot import RequestBot 
 
-Client().run()
+RequestBot().run()
