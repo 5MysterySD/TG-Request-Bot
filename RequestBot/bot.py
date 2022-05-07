@@ -7,7 +7,7 @@ from pyrogram.storage import Storage
 
 from config import API_HASH, APP_ID, LOGGER, OWNER_ID, BOT_TOKEN
 
-class Client(RawClient):
+class RequestBot(RawClient):
     """ Custom Bot Class """
 
     def __init__(self, session_name: Union[str, Storage] = "RequestBot"):
